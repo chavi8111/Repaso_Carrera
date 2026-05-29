@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repaso por materia - Web</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="header"><div><div class="brand">Repaso por materia</div><div class="small">Versión web compatible con Safari, Chrome, iPhone, iPad y PC</div></div><div class="toolbar"><button class="btn" id="backBtn">Menú</button></div></header>
+<main class="container">
+<section id="menu"><div class="card"><h1>Materias</h1><p class="small">Elige una materia para abrir su cuestionario. Todo funciona desde este paquete web.</p></div><div id="subjects" class="grid"></div></section>
+<section id="quiz" class="hidden">
+<div class="card quizTop"><div><h2 id="title"></h2><div id="counter" class="small"></div><div class="progress"><div id="bar" class="bar"></div></div></div><div id="score" class="score">Aciertos: 0</div></div>
+<div class="card"><h3>Enunciado</h3><div id="qid" class="qid"></div><div id="qtext" class="questionText"></div><div id="qimages" class="qImages"></div></div>
+<div class="card"><h3>Opciones</h3><div id="options" class="optionsBox"></div></div>
+<div class="card"><h3>Proceso / explicación</h3><div id="result" class="result"></div></div>
+<div class="toolbar"><button class="btn primary" id="answerBtn">Responder</button><button class="btn" id="nextBtn">Siguiente</button><button class="btn" id="restartBtn">Reiniciar materia</button></div>
+</section>
+</main>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
